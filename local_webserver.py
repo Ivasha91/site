@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, session, g, redirect, url_for,abort, flash, json, jsonify
 
 app = Flask(__name__)
-
+app.config.from_object(__name__)
 @app.route('/', methods = ['POST','GET'])
 def index():
     author = "Brax"
