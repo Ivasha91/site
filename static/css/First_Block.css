@@ -100,10 +100,10 @@ a{
     user-select: none;
     border: 2px solid; 
 }
-a.button8:hover {
+a:hover {
     background: rgba(255,255,255,.2);
 } 
-a.button8:active { 
+a:active { 
     background: green; 
 }
 @media screen and (max-width: 1000px){
