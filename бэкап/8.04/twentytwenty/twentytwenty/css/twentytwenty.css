@@ -14,13 +14,13 @@
   left: 50%;
   margin-left: -1.5px; }
 
-.twentytwenty-before-label, .twentytwenty-after-label {
+.twentytwenty-before-label, .twentytwenty-after-label, .twentytwenty-overlay {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%; }
 
-.twentytwenty-before-label, .twentytwenty-after-label {
+.twentytwenty-before-label, .twentytwenty-after-label, .twentytwenty-overlay {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   transition-duration: 0.5s; }
@@ -103,7 +103,12 @@
 .twentytwenty-horizontal .twentytwenty-after-label:before {
   right: 10px; }
 
-
+.twentytwenty-overlay {
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  transition-property: background;
+  background: rgba(0, 0, 0, 0);
+  z-index: 25; }
   .twentytwenty-overlay:hover {
     background: rgba(0, 0, 0, 0.5); }
     .twentytwenty-overlay:hover .twentytwenty-after-label {
@@ -131,7 +136,7 @@
     border: 2px solid; 
     margin-left: -22px;
   margin-top: -22px;
-  z-index: 15;
+  z-index: 10;
   cursor: pointer; }
 
 .twentytwenty-handle {

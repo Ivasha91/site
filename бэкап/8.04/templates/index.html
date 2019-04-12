@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--для мобилы-->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INSIDE VR Клуб Томска</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--локальные файлы-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/First_Block.css')}}">
+</head>
+<body>
+<!--первый блок, заглавная-->
+	<div id="First_Block" class="container" >    
+        <header>
+                Клуб виртуальной реальности <strong>INSIDE VR</strong>
+        </header>
+        <div id="main">
+	   	    <div id="First_Block_after_header">    
+                <div id="First_Block_pushbuttons" class="navbar"> 
+                    <div class="buttons">
+                        <a href="#">Игры</a><!--<form><input type="button" value="Игры" ></form> --> 
+                    </div>
+                    <div class="buttons">
+                        <a href="#contacts">Бронирование</a><!--<form><input type="button" value="бронирование"></form>-->
+                    </div>
+                </div>
+	   	        <div id="First_Block_attraction_word">
+                    <strong>Акция!</strong> Первое посещение бесплатно!
+                </div>
+            </div>
+        </div>
+    </div>    
+<!--второй блок, О нас-->
+	    <div id="Second_Block" class="container">
+            <div id="Second_Block_text_part">
+                <div id="Second_Block_Header">
+                    <strong>О нас</strong>
+                </div>
+                <div id="Second_Block_main_text">    
+                    Ещё недавно никто не мог себе предсавить, что он сможет не только смотреть, но и взаимодействовать с виртуальным миром.
+                </div>
+		        <div id="Second_Block_attraction_word">
+                    Подарите себе и своим близким незабываемые впечатления
+                </div>
+                <div id="client_Form">
+                    <form>
+                        <input type="button" value="Хочу попробовать!">
+                    </form>
+                </div>
+            </div>
+            <div id="Second_Block_video_part" class="video">
+                <iframe src="https://www.youtube.com/embed/XwJGa_6nkpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+            </div>
+        </div>
+<!--третий блок, преимущества-->
+        <div id="Third_Block" class="container">
+            <div>
+                Inside VR - место, <br /> где виртуальный мир становится реальным
+            </div>
+            <div>
+                Цены и акции<br /> самые низкие цены
+            </div>
+            <div>
+                Отдельное помещение<br /> теперь не надо беспокоиться где отпраздновать ДР
+            </div>
+            <div>
+                Кооператив<br /> прохождение игр вдвоём одновременно
+            </div>
+            <div>
+                Эмоции<br /> незабываемые ощущения и новый опыт
+            </div>    
+        </div>
+<!--четвёртый блок, Игры-->
+        <div id="Fourth_Block" class="container">
+            <div>
+                Популярные игры
+            </div>
+            <div>
+                <form>
+                    <input type="button" value="Получить каталог игр">
+                </form>
+            </div>        
+        </div>
+<!--пятый блок, отзывы+галерея-->
+        <div id="Fifth_Block" class="container">
+            <div>
+                Гелерея
+            </div>
+            <div>
+                Клуб виртуальной реальности INSIDE VR
+            </div>    
+        </div>
+<!--шестой блок, Бонирование-->
+        <div id="Sixth_Block" class="container">
+            
+        </div>
+<!--седьмой блок, Карта-->
+        <div id="Seventh_Block" class="container">
+            
+        </div>                        
+<!--Восьмой блок, контакты-->
+    <footer id="contacts" class="container">
+        <div id="contacts_header">
+            контакты    
+        </div>
+        <div id="contacts_header">
+            Клуб виртуальной реальности INSIDE VR    
+        </div>
+        <div id="Contacts_top_string">
+            <div id="contacts_top">
+                наш адрес:   
+            </div>    
+            <div id="contacts_top">
+                позвони нам:   
+            </div>    
+            <div id="contacts_top">
+                Подписывайся   
+            </div>   
+        </div>
+        <div id="Contacts_middle_string">
+            <div id="contacts_middle">
+                г.Томск ул. Красноармейская 120  
+            </div>    
+            <div id="contacts_middle">
+                8999999999                     
+            </div>    
+            <div id="contacts_middle">
+                VK.com/inside   
+            </div>   
+        </div>
+        <div id="Contacts_bottom_string">
+            <div id="contacts_bottom">
+                Главный вход,правое крыло   
+            </div>    
+            <div id="contacts_bottom">
+                пн-пт: 11:00 - 20:00; сб-вс: 11:00-21:00   
+            </div>    
+            <div id="contacts_bottom">
+                instagram/virtuality_tsk   
+            </div>    
+        </div>           
+    </footer>
+</body>
+</html>
