@@ -10,12 +10,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--для twenty-twenty-->
+    <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>twentytwenty</title>
+  <link href="{{ url_for('static', filename='css/foundation.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static', filename='css/twentytwenty.css')}}" rel="stylesheet" type="text/css">
 <!--локальные файлы-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/First_Block.css')}}">
 </head>
 <body>
 <!--первый блок, заглавная-->
-	<div id="First_Block" class="container" >    
+	    <div class="twentytwenty-container">
+            <img src="{{ url_for('static', filename='img/1_1.jpg')}}">
+            <img src="{{ url_for('static', filename='img/1_2.jpg')}}">
+            <a href="#" class="twentytwenty-button">Бронирование</a>
+        </div>
+    <!--<div id="First_Block" class="container" >    
         <header>
                 Клуб виртуальной реальности <strong>INSIDE VR</strong>
         </header>
@@ -23,10 +34,10 @@
 	   	    <div id="First_Block_after_header">    
                 <div id="First_Block_pushbuttons" class="navbar"> 
                     <div class="buttons">
-                        <a href="#">Игры</a><!--<form><input type="button" value="Игры" ></form> --> 
+                        <a href="#">Игры</a>    <form><input type="button" value="Игры" ></form> 
                     </div>
                     <div class="buttons">
-                        <a href="#contacts">Бронирование</a><!--<form><input type="button" value="бронирование"></form>-->
+                        <a href="#contacts">Бронирование</a>   <form><input type="button" value="бронирование"></form>  
                     </div>
                 </div>
 	   	        <div id="First_Block_attraction_word">
@@ -34,7 +45,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>   --> 
 <!--второй блок, О нас-->
 	    <div id="Second_Block" class="container">
             <div id="Second_Block_text_part">
@@ -56,9 +67,9 @@
             <div id="Second_Block_video_part" class="video">
                 <iframe src="https://www.youtube.com/embed/XwJGa_6nkpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
             </div>
-        </div>
+        </div>  
 <!--третий блок, преимущества-->
-        <div id="Third_Block" class="container">
+       <div id="Third_Block" class="container">
             <div>
                 Inside VR - место, <br /> где виртуальный мир становится реальным
             </div>
@@ -74,9 +85,9 @@
             <div>
                 Эмоции<br /> незабываемые ощущения и новый опыт
             </div>    
-        </div>
+        </div>  
 <!--четвёртый блок, Игры-->
-        <div id="Fourth_Block" class="container">
+       <div id="Fourth_Block" class="container">
             <div>
                 Популярные игры
             </div>
@@ -94,15 +105,15 @@
             <div>
                 Клуб виртуальной реальности INSIDE VR
             </div>    
-        </div>
+        </div> 
 <!--шестой блок, Бонирование-->
-        <div id="Sixth_Block" class="container">
+       <div id="Sixth_Block" class="container">
             
         </div>
 <!--седьмой блок, Карта-->
         <div id="Seventh_Block" class="container">
-            
-        </div>                        
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25f14a521d194e74dfd45cbee91b786f28afe3c5412c0794667425adeb91a206&amp;source=constructor" width="643" height="476" frameborder="0"></iframe>    
+        </div>                       
 <!--Восьмой блок, контакты-->
     <footer id="contacts" class="container">
         <div id="contacts_header">
@@ -145,5 +156,13 @@
             </div>    
         </div>           
     </footer>
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.event.move.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.twentytwenty.js')}}"></script>
+    <script>
+    $(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+    });
+    </script>
 </body>
 </html>
