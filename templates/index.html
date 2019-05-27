@@ -54,6 +54,7 @@
                 </div>
                 <div id="Second_Block_main_text">    
                     Ещё недавно никто не мог себе предсавить, что он сможет не только смотреть, но и взаимодействовать с виртуальным миром.
+                    Клуб виртуальной реальности это - лучшие игры и развлечения. Будущее уже здесь! В «INSIDE VR» Благодаря самому современному оборудованию, вы сможете оказаться за рулем гоночного болида, отправиться в путешествие в любую точку Земли, посетить красивейшие миры и это еще далеко не всё. Как на счёт спасти мир от зомби-апокалипсиса после трудового дня? Всё возможно! Для любителей квестов в виртуальной реальности существуют различные игры с интересными головоломками. Для любителей творчества у нас тоже найдётся кое-что «вкусненькое». Для детей различного возраста также предусмотрены как игры, так и развивающие приложения. Посетите этот мир один, или насладитесь им с друзьями, играя по сети. У нас организована комфортная зона отдыха для ваших близких, где они смогут наблюдать за всеми вашими действиями и быть помощниками в виртуальной реальности. Будем рады подарить Вам новые впечатления, Мы ждём вас. Команда куба «INSIDE VR». 
                 </div>
 		        <div id="Second_Block_attraction_word">
                     Подарите себе и своим близким незабываемые впечатления
@@ -108,8 +109,20 @@
         </div> 
 <!--шестой блок, Бонирование-->
        <div id="Sixth_Block" class="container">
-            
+            <div id="Sixth_Block_header">забронировать сеанс</div>        
+                <form action="#" id="Sixth_Block_form">
+                    <div>
+                        <input type="text" name="name" class=" input_Sixth_Block"id="Sixth_Block_name" placeholder="Имя">
+                        <input type="text" name="phone" class=" input_Sixth_Block" id="Sixth_Block_phone" placeholder="Телефон">
+                    </div>
+                    <div>
+                        <input type="text" name="email" class=" input_Sixth_Block" id="Sixth_Block_email" placeholder="email">
+                        <input type="text" name="name" class=" input_Sixth_Block" id="Sixth_Block_time" placeholder="Дата,время, количество установок">
+                    </div>
+                    <button type="button" id="Sixth_Block_button"> Отправить</button>
+                </form>    
         </div>
+        <div id="bg_Sixth_Block"></div>
 <!--седьмой блок, Карта-->
         <div id="Seventh_Block" class="container">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25f14a521d194e74dfd45cbee91b786f28afe3c5412c0794667425adeb91a206&amp;source=constructor" width="643" height="476" frameborder="0"></iframe>    
@@ -156,13 +169,15 @@
             </div>    
         </div>           
     </footer>
-    <script src="{{ url_for('static', filename='js/jquery-3.2.1.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/jquery.event.move.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/jquery.twentytwenty.js')}}"></script>
-    <script>
+<script src="{{ url_for('static', filename='js/jquery-3.2.1.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.event.move.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.twentytwenty.js')}}"></script>
+<script src="{{ url_for('static', filename='js/Site.js')}}"></script>
+<script>
     $(function(){
       $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
     });
-    </script>
+</script>
 </body>
 </html>
+<!--как открыть окно всплываюее с кнопки-->
