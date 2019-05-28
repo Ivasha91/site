@@ -52,7 +52,7 @@ header{
        top: 35vh; 
     }
 }    
-.buttons{
+    .buttons{
     position: relative;
     top: -15px;
 }
@@ -61,9 +61,8 @@ header{
     position: relative; 
     top: 50vh;
     color: white;
-    font-size: 50px;
-}
-@media screen and (max-width: 1000px){
+    font-size: 50px;}
+    @media screen and (max-width: 1000px){
     #First_Block_attraction_word{
      font-size: 20px;
      top: 45vh;   
@@ -96,9 +95,48 @@ margin-top: 10%;
     background-color: rgba(255,0,255,0.3);
         border-top: 4px solid #000000 
 }
+#Fourth_Block_header{
+    background-color: rgba(255,255,255,0.3);
+    text-align: center;
+}
+#Fourth_Block_button{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(130,200,20,0.3);
+}
+    #Fourth_Block_img_holder{
+    margin: 20px 0 0 20px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: left;
+    }
+    .Fourth_Block_img_holder_low{
+    flex: 26%;
+    margin-top: 20px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .Fourth_Block_img{
+    max-height: 250px;
+    max-width: 250px;
+}
 #Fifth_Block{
     background-color: rgba(0,255,255,0.3);
-        border-top: 4px solid #000000 
+        border-top: 4px solid #000000;
+        max-height: 40vh;
+}
+#Fifth_Block_header{
+    text-align: center;
+}
+#Fifth_Block_header_low{
+    text-align: center;
 }
 #Sixth_Block{
     display: none;
@@ -148,32 +186,34 @@ margin-top: 10%;
 }
 #Seventh_Block{
     background-color: rgba(0,50,255,0.3);
-        border-top: 4px solid #000000 
+        border-top: 4px solid #000000;
+        max-height: 55vh;
+        align-items: right; 
+}
+#Seventh_Block_map{
+    position: relative;
+    float: right;
 }
 #contacts{
     float: bottom;
 }
 iframe{
     height: 50vh;
-    width: 50vw;
-}
-a{
+    width: 50vw;}
+.twentytwenty-button{
     color: white;
     display: inline-block;
     font-weight: 700;
     font-size: 25px;
     text-decoration: none;
     user-select: none;
-    border: 2px solid; 
-}
-a:hover {
-    background: rgba(255,255,255,.2);
-} 
-a:active { 
-    background: green; 
-}
+    border: 2px solid; }
+    .twentytwenty-button:hover {
+    background: rgba(255,255,255,.2);} 
+    .twentytwenty-button:active { 
+    background: green; }
 @media screen and (max-width: 1000px){
-    a{
+    .twentytwenty-button{
     font-size: 15px;
     }
 }

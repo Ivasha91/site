@@ -18,6 +18,7 @@
   <link href="{{ url_for('static', filename='css/twentytwenty.css')}}" rel="stylesheet" type="text/css">
 <!--локальные файлы-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/First_Block.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Review.css')}}">
 </head>
 <body>
 <!--первый блок, заглавная-->
@@ -89,24 +90,115 @@
         </div>  
 <!--четвёртый блок, Игры-->
        <div id="Fourth_Block" class="container">
-            <div>
+            <div id="Fourth_Block_header">
                 Популярные игры
             </div>
-            <div>
-                <form>
-                    <input type="button" value="Получить каталог игр">
+            <div id="Fourth_Block_img_holder">
+            	<div class="Fourth_Block_img_holder_low">
+            		Симуляторы
+            		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_1.jpg')}}">	
+            	</div>
+            	<div class="Fourth_Block_img_holder_low">
+            		Шутеры
+            		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_2.jpg')}}">	
+            	</div>
+            	<div class="Fourth_Block_img_holder_low">
+            		Экстрим
+            		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_3.jpg')}}">	
+            	</div>
+            	<div class="Fourth_Block_img_holder_low">
+            		Детские
+            		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_4.jpg')}}">	
+            	</div>
+            	<div class="Fourth_Block_img_holder_low">
+            		Музыкальные
+            		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_5.png')}}">	
+            	</div>
+            	<div class="Fourth_Block_img_holder_low">
+            		Ужасы
+            		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_6.jpg')}}">	
+            	</div>
+            </div>
+            <div id="Fourth_Block_button">
+                <form  >
+                    <input type="button" value="Запросить каталог игр">
                 </form>
             </div>        
         </div>
-<!--пятый блок, отзывы+галерея-->
-        <div id="Fifth_Block" class="container">
-            <div>
-                Гелерея
+<!--пятый блок, отзывы+галерея-->     
+<div id="Fifth_Block" class="container">
+            <div id="Fifth_Block_header">
+                Отзывы
             </div>
-            <div>
+            <div id="Fifth_Block_header_low">
                 Клуб виртуальной реальности INSIDE VR
-            </div>    
-        </div> 
+            </div>
+    <div id="slider" class="slider">
+        <ol class="slider__indicators">
+            <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+            <li class="slider__indicator" data-slide-to="1"></li>
+            <li class="slider__indicator" data-slide-to="2"></li>
+            <li class="slider__indicator" data-slide-to="3"></li>
+        </ol>
+    <div class="slider__items">
+      <div class="slider__item slider__item_1 slider__item_active">
+        <div class="slider__item_inner">
+          <span class="slider__item_img">
+            <img class="slider__item_photo" src="/examples/images/review_1.jpg" alt="">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">вася пупкин</span>
+            <span class="slider__item_text">
+              Поиграл на ура
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="slider__item slider__item_2">
+        <div class="slider__item_inner">
+          <span class="slider__item_img">
+            <img src="/examples/images/review_2.jpg" alt="">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">ангелина мотвеевна</span>
+            <span class="slider__item_text">
+              ваще крутяк
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="slider__item slider__item_3">
+        <div class="slider__item_inner">
+          <span class="slider__item_img">
+            <img src="/examples/images/review_1.jpg" alt="">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">кристина палатаева</span>
+            <span class="slider__item_text">
+              ребёнок играл я икала
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="slider__item slider__item_4">
+        <div class="slider__item_inner">
+          <span class="slider__item_img">
+            <img src="/examples/images/review_4.jpg" alt="">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">куля кукуля</span>
+            <span class="slider__item_text">
+              sfgkjhdgkdo nsffg osfg g sogh блин раскладка
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button"></a>
+    <a class="slider__control slider__control_next" href="#" role="button"></a>
+    </div>
+</div>
+        
 <!--шестой блок, Бонирование-->
        <div id="Sixth_Block" class="container">
             <div id="Sixth_Block_header">забронировать сеанс</div>        
@@ -125,7 +217,7 @@
         <div id="bg_Sixth_Block"></div>
 <!--седьмой блок, Карта-->
         <div id="Seventh_Block" class="container">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25f14a521d194e74dfd45cbee91b786f28afe3c5412c0794667425adeb91a206&amp;source=constructor" width="643" height="476" frameborder="0"></iframe>    
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25f14a521d194e74dfd45cbee91b786f28afe3c5412c0794667425adeb91a206&amp;source=constructor" width="643" height="476" frameborder="0" id="Seventh_Block_map"></iframe>    
         </div>                       
 <!--Восьмой блок, контакты-->
     <footer id="contacts" class="container">
@@ -178,6 +270,7 @@
       $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
     });
 </script>
+<script src="{{ url_for('static', filename='js/Review.js')}}"></script>
 </body>
 </html>
 <!--как открыть окно всплываюее с кнопки-->
