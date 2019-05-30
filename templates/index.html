@@ -22,11 +22,11 @@
 </head>
 <body>
 <!--первый блок, заглавная-->
-	    <div class="twentytwenty-container">
-            <img src="{{ url_for('static', filename='img/1_1.jpg')}}">
-            <img src="{{ url_for('static', filename='img/1_2.jpg')}}">
-            <a href="#" class="twentytwenty-button">Бронирование</a>
-        </div>
+    <div class="twentytwenty-container">
+        <img src="{{ url_for('static', filename='img/1_1.jpg')}}">
+        <img src="{{ url_for('static', filename='img/1_2.jpg')}}">
+        <a href="#" class="twentytwenty-button">Бронирование</a>
+    </div>
     <!--<div id="First_Block" class="container" >    
         <header>
                 Клуб виртуальной реальности <strong>INSIDE VR</strong>
@@ -126,79 +126,78 @@
             </div>        
         </div>
 <!--пятый блок, отзывы+галерея-->     
-<div id="Fifth_Block" class="container">
-            <div id="Fifth_Block_header">
-                Отзывы
+    <div id="Fifth_Block" class="container">
+                <div id="Fifth_Block_header">
+                    Отзывы
+                </div>
+                <div id="Fifth_Block_header_low">
+                    Клуб виртуальной реальности INSIDE VR
+                </div>
+        <div id="slider" class="slider">
+            <ol class="slider__indicators">
+                <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+                <li class="slider__indicator" data-slide-to="1"></li>
+                <li class="slider__indicator" data-slide-to="2"></li>
+                <li class="slider__indicator" data-slide-to="3"></li>
+            </ol>
+        <div class="slider__items">
+          <div class="slider__item slider__item_1 slider__item_active">
+            <div class="slider__item_inner">
+              <span class="slider__item_img">
+                <img class="slider__item_photo" src="/examples/images/review_1.jpg" alt="">
+              </span>
+              <span class="slider__item_testimonial">
+                <span class="slider__item_name">вася пупкин</span>
+                <span class="slider__item_text">
+                  Поиграл на ура
+                </span>
+              </span>
             </div>
-            <div id="Fifth_Block_header_low">
-                Клуб виртуальной реальности INSIDE VR
+          </div>
+          <div class="slider__item slider__item_2">
+            <div class="slider__item_inner">
+              <span class="slider__item_img">
+                <img src="/examples/images/review_2.jpg" alt="">
+              </span>
+              <span class="slider__item_testimonial">
+                <span class="slider__item_name">ангелина мотвеевна</span>
+                <span class="slider__item_text">
+                  ваще крутяк
+                </span>
+              </span>
             </div>
-    <div id="slider" class="slider">
-        <ol class="slider__indicators">
-            <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
-            <li class="slider__indicator" data-slide-to="1"></li>
-            <li class="slider__indicator" data-slide-to="2"></li>
-            <li class="slider__indicator" data-slide-to="3"></li>
-        </ol>
-    <div class="slider__items">
-      <div class="slider__item slider__item_1 slider__item_active">
-        <div class="slider__item_inner">
-          <span class="slider__item_img">
-            <img class="slider__item_photo" src="/examples/images/review_1.jpg" alt="">
-          </span>
-          <span class="slider__item_testimonial">
-            <span class="slider__item_name">вася пупкин</span>
-            <span class="slider__item_text">
-              Поиграл на ура
-            </span>
-          </span>
+          </div>
+          <div class="slider__item slider__item_3">
+            <div class="slider__item_inner">
+              <span class="slider__item_img">
+                <img src="/examples/images/review_1.jpg" alt="">
+              </span>
+              <span class="slider__item_testimonial">
+                <span class="slider__item_name">кристина палатаева</span>
+                <span class="slider__item_text">
+                  ребёнок играл я икала
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="slider__item slider__item_4">
+            <div class="slider__item_inner">
+              <span class="slider__item_img">
+                <img src="/examples/images/review_4.jpg" alt="">
+              </span>
+              <span class="slider__item_testimonial">
+                <span class="slider__item_name">куля кукуля</span>
+                <span class="slider__item_text">
+                  sfgkjhdgkdo nsffg osfg g sogh блин раскладка
+                </span>
+              </span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="slider__item slider__item_2">
-        <div class="slider__item_inner">
-          <span class="slider__item_img">
-            <img src="/examples/images/review_2.jpg" alt="">
-          </span>
-          <span class="slider__item_testimonial">
-            <span class="slider__item_name">ангелина мотвеевна</span>
-            <span class="slider__item_text">
-              ваще крутяк
-            </span>
-          </span>
+        <a class="slider__control slider__control_prev" href="#" role="button"></a>
+        <a class="slider__control slider__control_next" href="#" role="button"></a>
         </div>
-      </div>
-      <div class="slider__item slider__item_3">
-        <div class="slider__item_inner">
-          <span class="slider__item_img">
-            <img src="/examples/images/review_1.jpg" alt="">
-          </span>
-          <span class="slider__item_testimonial">
-            <span class="slider__item_name">кристина палатаева</span>
-            <span class="slider__item_text">
-              ребёнок играл я икала
-            </span>
-          </span>
-        </div>
-      </div>
-      <div class="slider__item slider__item_4">
-        <div class="slider__item_inner">
-          <span class="slider__item_img">
-            <img src="/examples/images/review_4.jpg" alt="">
-          </span>
-          <span class="slider__item_testimonial">
-            <span class="slider__item_name">куля кукуля</span>
-            <span class="slider__item_text">
-              sfgkjhdgkdo nsffg osfg g sogh блин раскладка
-            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-    <a class="slider__control slider__control_prev" href="#" role="button"></a>
-    <a class="slider__control slider__control_next" href="#" role="button"></a>
-    </div>
-</div>
-        
+    </div>      
 <!--шестой блок, Бонирование-->
        <div id="Sixth_Block" class="container">
             <div id="Sixth_Block_header">забронировать сеанс</div>        
@@ -261,16 +260,16 @@
             </div>    
         </div>           
     </footer>
-<script src="{{ url_for('static', filename='js/jquery-3.2.1.js')}}"></script>
-<script src="{{ url_for('static', filename='js/jquery.event.move.js')}}"></script>
-<script src="{{ url_for('static', filename='js/jquery.twentytwenty.js')}}"></script>
-<script src="{{ url_for('static', filename='js/Site.js')}}"></script>
-<script>
-    $(function(){
-      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-    });
-</script>
-<script src="{{ url_for('static', filename='js/Review.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.event.move.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.twentytwenty.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/Site.js')}}"></script>
+    <script>
+        $(function(){
+        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+        });
+    </script>
+    <script src="{{ url_for('static', filename='js/Review.js')}}"></script>
 </body>
 </html>
 <!--как открыть окно всплываюее с кнопки-->
