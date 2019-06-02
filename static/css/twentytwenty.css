@@ -118,22 +118,22 @@
 .twentytwenty-after {
   z-index: 10; }
 
-/*я уже добавил*/
-.twentytwenty-button{
+/*Кнопки*/
+#twentytwenty_buttons{
   position: absolute;
-  left: 30%;
-  top: 50%;
-  color: white;
-    display: inline-block;
-    font-weight: 700;
-    font-size: 25px;
-    text-decoration: none;
-    user-select: none;
-    border: 2px solid; 
-    margin-left: -22px;
-  margin-top: -22px;
+  top: 70%;
   z-index: 15;
-  cursor: pointer; }
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+        min-width: 80vw;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        background-color: rgba(255, 255,0, 0.2);
+}
+
+
 
 .twentytwenty-handle {
   height: 38px;

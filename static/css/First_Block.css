@@ -14,7 +14,10 @@
     width: 100vw;
 }
 @media screen and (min-width: 1300px){
-    .container{
+    .twentytwenty-container{
+        margin-left: 12.1vw;
+    }
+    .container, .twentytwenty-container{
         width: 75vw; 
     }
 }
@@ -56,41 +59,78 @@ header{
     position: relative;
     top: -15px;
 }
+#First_Block_header{
+    text-align: center;
+    position: relative;
+    top: 5vh;
+    color: white;
+    font-size: 50px;
+    z-index: 45;
+}
 #First_Block_attraction_word{
     text-align: center;
     position: relative; 
-    top: 50vh;
+    top: 7vh;
     color: white;
-    font-size: 50px;}
+    font-size: 40px;
+    z-index: 15;
+}
     @media screen and (max-width: 1000px){
     #First_Block_attraction_word{
      font-size: 20px;
      top: 45vh;   
     }
 }
+.twentytwenty-button{
+
+  color: white;
+    font-weight: 800;
+    font-size: 36px;
+    text-decoration: none;
+    user-select: none;
+    border: 2px solid; 
+  cursor: pointer; 
+}
+.twentytwenty-button:hover {
+    background: rgba(255,255,255,.2);} 
+    .twentytwenty-button:active { 
+    background: green; 
+}
+@media screen and (max-width: 1000px){
+    .twentytwenty-button{
+    font-size: 15px;
+    }
+}
+#Second_Block{
+        background-color: rgba(255,255,0,0.3);
+        border-top: 4px solid #000000
+}
+#Second_Block_info{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+}
 #Second_Block_text_part{
 max-width: 500px;
 align-self:flex-start;
 margin-top: 10%;
 }
-#Second_Block{
-        display: flex;
-        list-style-type: none;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(255,255,0,0.3);
-        border-top: 4px solid #000000
-}
 #Second_Block_video_part{
     float: right;
-    margin-bottom: 100px;
+    margin-top: 10%;
+
 }
 #Third_Block{
    background-color: rgba(255,0,0,0.3);
-        border-top: 4px solid #000000 
-}
+        border-top: 4px solid #000000;
+        background-image: url(third block.jpg);   /* переделать перенос картинки в папку img*/
+        background-size: 100% 100%;
+        }   
+
 #Fourth_Block{
     background-color: rgba(255,0,255,0.3);
         border-top: 4px solid #000000 
@@ -98,11 +138,13 @@ margin-top: 10%;
 #Fourth_Block_header{
     background-color: rgba(255,255,255,0.3);
     text-align: center;
+    margin-top: 10px;
 }
 #Fourth_Block_button{
     display: flex;
     justify-content: center;
     background-color: rgba(130,200,20,0.3);
+    margin-top: 10px;
 }
     #Fourth_Block_img_holder{
     margin: 20px 0 0 20px;
@@ -137,6 +179,7 @@ margin-top: 10%;
 }
 #Fifth_Block_header_low{
     text-align: center;
+    padding-bottom: 10px;
 }
 #Sixth_Block{
     display: none;
@@ -188,11 +231,23 @@ margin-top: 10%;
     background-color: rgba(0,50,255,0.3);
         border-top: 4px solid #000000;
         max-height: 55vh;
-        align-items: right; 
+        }
+#Seventh_Block_info{
+    display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+        
+}        
+#Seventh_Block_contacts{
+    display: inline-block;
 }
 #Seventh_Block_map{
-    position: relative;
-    float: right;
+    margin-top: 10px;
+   display: inline-block;
+   float: right; 
 }
 #contacts{
     float: bottom;
@@ -200,23 +255,7 @@ margin-top: 10%;
 iframe{
     height: 50vh;
     width: 50vw;}
-.twentytwenty-button{
-    color: white;
-    display: inline-block;
-    font-weight: 700;
-    font-size: 25px;
-    text-decoration: none;
-    user-select: none;
-    border: 2px solid; }
-    .twentytwenty-button:hover {
-    background: rgba(255,255,255,.2);} 
-    .twentytwenty-button:active { 
-    background: green; }
-@media screen and (max-width: 1000px){
-    .twentytwenty-button{
-    font-size: 15px;
-    }
-}
+
 
 
 

@@ -25,69 +25,46 @@
     <div class="twentytwenty-container">
         <img src="{{ url_for('static', filename='img/1_1.jpg')}}">
         <img src="{{ url_for('static', filename='img/1_2.jpg')}}">
-        <a href="#" class="twentytwenty-button">Бронирование</a>
-    </div>
-    <!--<div id="First_Block" class="container" >    
-        <header>
+        <header id="First_Block_header">
                 Клуб виртуальной реальности <strong>INSIDE VR</strong>
         </header>
-        <div id="main">
-	   	    <div id="First_Block_after_header">    
-                <div id="First_Block_pushbuttons" class="navbar"> 
-                    <div class="buttons">
-                        <a href="#">Игры</a>    <form><input type="button" value="Игры" ></form> 
-                    </div>
-                    <div class="buttons">
-                        <a href="#contacts">Бронирование</a>   <form><input type="button" value="бронирование"></form>  
-                    </div>
-                </div>
-	   	        <div id="First_Block_attraction_word">
+        <div id="First_Block_attraction_word">
                     <strong>Акция!</strong> Первое посещение бесплатно!
                 </div>
-            </div>
+        <div id="twentytwenty_buttons">
+            <a href="#" class="twentytwenty-button">Бронирование</a>
+            <a href="#Fourth_Block" class="twentytwenty-button"> Игры</a>
         </div>
-    </div>   --> 
+    </div> 
 <!--второй блок, О нас-->
 	    <div id="Second_Block" class="container">
-            <div id="Second_Block_text_part">
-                <div id="Second_Block_Header">
-                    <strong>О нас</strong>
+            <div id="Second_Block_info">
+                <div id="Second_Block_text_part">
+                    <div id="Second_Block_Header">
+                        <strong>О нас</strong>
+                    </div>
+                    <div id="Second_Block_main_text">  
+                    куда сводить школьника? типа больше некуда, вот вам клуб  
+                        Ещё недавно никто не мог себе предсавить, что он сможет не только смотреть, но и взаимодействовать с виртуальным миром.
+                        Клуб виртуальной реальности это - лучшие игры и развлечения. Будущее уже здесь! В «INSIDE VR» Благодаря самому современному оборудованию, вы сможете оказаться за рулем гоночного болида, отправиться в путешествие в любую точку Земли, посетить красивейшие миры и это еще далеко не всё. Как на счёт спасти мир от зомби-апокалипсиса после трудового дня? Всё возможно! Для любителей квестов в виртуальной реальности существуют различные игры с интересными головоломками. Для любителей творчества у нас тоже найдётся кое-что «вкусненькое». Для детей различного возраста также предусмотрены как игры, так и развивающие приложения. Посетите этот мир один, или насладитесь им с друзьями, играя по сети. У нас организована комфортная зона отдыха для ваших близких, где они смогут наблюдать за всеми вашими действиями и быть помощниками в виртуальной реальности. Будем рады подарить Вам новые впечатления, Мы ждём вас. Команда куба «INSIDE VR». 
+                    </div>
+    		        <div id="Second_Block_attraction_word">
+                        Подарите себе и своим близким незабываемые впечатления
+                    </div>
+                    <div id="client_Form">
+                        <form>
+                            <input type="button" value="Хочу попробовать!">
+                        </form>
+                    </div>
                 </div>
-                <div id="Second_Block_main_text">    
-                    Ещё недавно никто не мог себе предсавить, что он сможет не только смотреть, но и взаимодействовать с виртуальным миром.
-                    Клуб виртуальной реальности это - лучшие игры и развлечения. Будущее уже здесь! В «INSIDE VR» Благодаря самому современному оборудованию, вы сможете оказаться за рулем гоночного болида, отправиться в путешествие в любую точку Земли, посетить красивейшие миры и это еще далеко не всё. Как на счёт спасти мир от зомби-апокалипсиса после трудового дня? Всё возможно! Для любителей квестов в виртуальной реальности существуют различные игры с интересными головоломками. Для любителей творчества у нас тоже найдётся кое-что «вкусненькое». Для детей различного возраста также предусмотрены как игры, так и развивающие приложения. Посетите этот мир один, или насладитесь им с друзьями, играя по сети. У нас организована комфортная зона отдыха для ваших близких, где они смогут наблюдать за всеми вашими действиями и быть помощниками в виртуальной реальности. Будем рады подарить Вам новые впечатления, Мы ждём вас. Команда куба «INSIDE VR». 
+                <div id="Second_Block_video_part">
+                    <iframe src="https://www.youtube.com/embed/XwJGa_6nkpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
                 </div>
-		        <div id="Second_Block_attraction_word">
-                    Подарите себе и своим близким незабываемые впечатления
-                </div>
-                <div id="client_Form">
-                    <form>
-                        <input type="button" value="Хочу попробовать!">
-                    </form>
-                </div>
-            </div>
-            <div id="Second_Block_video_part" class="video">
-                <iframe src="https://www.youtube.com/embed/XwJGa_6nkpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
             </div>
         </div>  
 <!--третий блок, преимущества-->
-       <div id="Third_Block" class="container">
-            <div>
-                Inside VR - место, <br /> где виртуальный мир становится реальным
-            </div>
-            <div>
-                Цены и акции<br /> самые низкие цены
-            </div>
-            <div>
-                Отдельное помещение<br /> теперь не надо беспокоиться где отпраздновать ДР
-            </div>
-            <div>
-                Кооператив<br /> прохождение игр вдвоём одновременно
-            </div>
-            <div>
-                Эмоции<br /> незабываемые ощущения и новый опыт
-            </div>    
-        </div>  
+    <div id="Third_Block" class="container">      
+    </div>  
 <!--четвёртый блок, Игры-->
        <div id="Fourth_Block" class="container">
             <div id="Fourth_Block_header">
@@ -131,7 +108,7 @@
                     Отзывы
                 </div>
                 <div id="Fifth_Block_header_low">
-                    Клуб виртуальной реальности INSIDE VR
+                    Клуб виртуальной реальности INSIDE VR 
                 </div>
         <div id="slider" class="slider">
             <ol class="slider__indicators">
@@ -215,51 +192,54 @@
         </div>
         <div id="bg_Sixth_Block"></div>
 <!--седьмой блок, Карта-->
-        <div id="Seventh_Block" class="container">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25f14a521d194e74dfd45cbee91b786f28afe3c5412c0794667425adeb91a206&amp;source=constructor" width="643" height="476" frameborder="0" id="Seventh_Block_map"></iframe>    
-        </div>                       
-<!--Восьмой блок, контакты-->
-    <footer id="contacts" class="container">
-        <div id="contacts_header">
-            контакты    
-        </div>
-        <div id="contacts_header">
-            Клуб виртуальной реальности INSIDE VR    
-        </div>
-        <div id="Contacts_top_string">
-            <div id="contacts_top">
-                наш адрес:   
-            </div>    
-            <div id="contacts_top">
-                позвони нам:   
-            </div>    
-            <div id="contacts_top">
-                Подписывайся   
-            </div>   
-        </div>
-        <div id="Contacts_middle_string">
-            <div id="contacts_middle">
-                г.Томск ул. Красноармейская 120  
-            </div>    
-            <div id="contacts_middle">
-                8999999999                     
-            </div>    
-            <div id="contacts_middle">
-                VK.com/inside   
-            </div>   
-        </div>
-        <div id="Contacts_bottom_string">
-            <div id="contacts_bottom">
-                Главный вход,правое крыло   
-            </div>    
-            <div id="contacts_bottom">
-                пн-пт: 11:00 - 20:00; сб-вс: 11:00-21:00   
-            </div>    
-            <div id="contacts_bottom">
-                instagram/virtuality_tsk   
-            </div>    
-        </div>           
-    </footer>
+    <div id="Seventh_Block" class="container">
+        <div id="Seventh_Block_Info">
+            <div id="Seventh_Block_contacts">
+                <div class="contacts_header">
+                    контакты    
+                </div>
+                <div class="contacts_header">
+                    Клуб виртуальной реальности INSIDE VR    
+                </div>
+                <div id="Contacts_top_string">
+                    <div class="contacts_top">
+                        наш адрес:   
+                    </div>    
+                    <div class="contacts_top">
+                        позвони нам:   
+                    </div>    
+                    <div class="contacts_top">
+                        Подписывайся   
+                    </div>   
+                </div>
+                <div id="Contacts_middle_string">
+                    <div class="contacts_middle">
+                        г.Томск ул. Красноармейская 120  
+                    </div>    
+                    <div class="contacts_middle">
+                        8999999999                     
+                    </div>    
+                    <div class="contacts_middle">
+                        VK.com/inside   
+                    </div>   
+                </div>
+                <div id="Contacts_bottom_string">
+                    <div class="contacts_bottom">
+                        Главный вход,правое крыло   
+                    </div>    
+                    <div class="contacts_bottom">
+                        пн-пт: 11:00 - 20:00; сб-вс: 11:00-21:00   
+                    </div>    
+                    <div class="contacts_bottom">
+                        instagram/virtuality_tsk   
+                    </div>    
+                </div>           
+            </div>
+            <div id="Seventh_Block_map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25f14a521d194e74dfd45cbee91b786f28afe3c5412c0794667425adeb91a206&amp;source=constructor" width="643" height="476" frameborder="0"></iframe>
+            </div>
+        </div>        
+    </div>                       
     <script src="{{ url_for('static', filename='js/jquery-3.2.1.js')}}"></script>
     <script src="{{ url_for('static', filename='js/jquery.event.move.js')}}"></script>
     <script src="{{ url_for('static', filename='js/jquery.twentytwenty.js')}}"></script>
