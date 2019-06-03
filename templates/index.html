@@ -40,9 +40,9 @@
 	    <div id="Second_Block" class="container">
             <div id="Second_Block_info">
                 <div id="Second_Block_text_part">
-                    <div id="Second_Block_Header">
+                    <h1 id="Second_Block_Header">
                         <strong>О нас</strong>
-                    </div>
+                    </h1>
                     <div id="Second_Block_main_text">  
                     куда сводить школьника? типа больше некуда, вот вам клуб  
                         Ещё недавно никто не мог себе предсавить, что он сможет не только смотреть, но и взаимодействовать с виртуальным миром.
@@ -52,9 +52,7 @@
                         Подарите себе и своим близким незабываемые впечатления
                     </div>
                     <div id="client_Form">
-                        <form>
-                            <input type="button" value="Хочу попробовать!">
-                        </form>
+                        <a href="#" class="button">Хочу попробовать!</a>
                     </div>
                 </div>
                 <div id="Second_Block_video_part">
@@ -67,49 +65,47 @@
     </div>  
 <!--четвёртый блок, Игры-->
        <div id="Fourth_Block" class="container">
-            <div id="Fourth_Block_header">
+            <h1 id="Fourth_Block_header">
                 Популярные игры
-            </div>
+            </h1>
             <div id="Fourth_Block_img_holder">
             	<div class="Fourth_Block_img_holder_low">
-            		Симуляторы
+            		<h6>Симуляторы</h6>
             		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_1.jpg')}}">	
             	</div>
             	<div class="Fourth_Block_img_holder_low">
-            		Шутеры
+            		<h6>Шутеры</h6>
             		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_2.jpg')}}">	
             	</div>
             	<div class="Fourth_Block_img_holder_low">
-            		Экстрим
+            		<h6>Экстрим</h6>
             		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_3.jpg')}}">	
             	</div>
             	<div class="Fourth_Block_img_holder_low">
-            		Детские
+            		<h6>Детские</h6>
             		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_4.jpg')}}">	
             	</div>
             	<div class="Fourth_Block_img_holder_low">
-            		Музыкальные
+            		<h6>Музыкальные</h6>
             		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_5.png')}}">	
             	</div>
             	<div class="Fourth_Block_img_holder_low">
-            		Ужасы
+            		<h6>Ужасы</h6>
             		<img class="Fourth_Block_img" src="{{ url_for('static', filename='img/game_6.jpg')}}">	
             	</div>
             </div>
             <div id="Fourth_Block_button">
-                <form  >
-                    <input type="button" value="Запросить каталог игр">
-                </form>
+                <a href="#" class="button" ">Запросить каталог игр</a>
             </div>        
         </div>
 <!--пятый блок, отзывы+галерея-->     
     <div id="Fifth_Block" class="container">
-                <div id="Fifth_Block_header">
+                <h1 id="Fifth_Block_header">
                     Отзывы
-                </div>
-                <div id="Fifth_Block_header_low">
+                </h1>
+                <h5 id="Fifth_Block_header_low">
                     Клуб виртуальной реальности INSIDE VR 
-                </div>
+                </h5>
         <div id="slider" class="slider">
             <ol class="slider__indicators">
                 <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
@@ -195,45 +191,38 @@
     <div id="Seventh_Block" class="container">
         <div id="Seventh_Block_Info">
             <div id="Seventh_Block_contacts">
-                <div class="contacts_header">
+                <h1 id="contacts_header">
                     контакты    
-                </div>
-                <div class="contacts_header">
-                    Клуб виртуальной реальности INSIDE VR    
-                </div>
-                <div id="Contacts_top_string">
-                    <div class="contacts_top">
-                        наш адрес:   
-                    </div>    
-                    <div class="contacts_top">
-                        позвони нам:   
-                    </div>    
-                    <div class="contacts_top">
-                        Подписывайся   
-                    </div>   
-                </div>
-                <div id="Contacts_middle_string">
-                    <div class="contacts_middle">
-                        г.Томск ул. Красноармейская 120  
-                    </div>    
-                    <div class="contacts_middle">
-                        8999999999                     
-                    </div>    
-                    <div class="contacts_middle">
-                        VK.com/inside   
-                    </div>   
-                </div>
-                <div id="Contacts_bottom_string">
-                    <div class="contacts_bottom">
-                        Главный вход,правое крыло   
-                    </div>    
-                    <div class="contacts_bottom">
-                        пн-пт: 11:00 - 20:00; сб-вс: 11:00-21:00   
-                    </div>    
-                    <div class="contacts_bottom">
-                        instagram/virtuality_tsk   
-                    </div>    
-                </div>           
+                </h1>
+                <h5 id="contacts_header_low">
+                    INSIDE VR|Клуб виртуальной реальности     
+                </h5>
+                <div id="contacts_main_text">
+                    
+                        <div class="contacts_top">
+                            наш адрес:   
+                        </div>    
+                        <div class="contacts_top">
+                            позвони нам:   
+                        </div>    
+                        <div class="contacts_top">
+                            Подписывайся   
+                        </div>   
+                    
+                    
+                        <div class="contacts_middle">
+                            г.Томск ул. Красноармейская 120<br>
+                            Главный вход,правое крыло  
+                        </div>    
+                        <div class="contacts_middle">
+                            8999999999<br>
+                            пн-пт: 11:00 - 20:00; сб-вс: 11:00-21:00                     
+                        </div>    
+                        <div class="contacts_middle">
+                            VK.com/inside<br>
+                            instagram/virtuality_tsk   
+                        </div>   
+                </div>                
             </div>
             <div id="Seventh_Block_map">
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25f14a521d194e74dfd45cbee91b786f28afe3c5412c0794667425adeb91a206&amp;source=constructor" width="643" height="476" frameborder="0"></iframe>
