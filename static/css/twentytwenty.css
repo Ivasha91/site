@@ -163,6 +163,11 @@ margin-left: 0;
   color: white;
   font-weight: bold;
 }
+@media screen and (max-width: 600px){
+    .twentytwenty-handle{
+     font-size: 0px;   
+    }
+}    
 
 .twentytwenty-horizontal .twentytwenty-handle:before {
   bottom: 50%;
