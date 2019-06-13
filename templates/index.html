@@ -7,13 +7,10 @@
     <title>INSIDE VR Клуб Томска</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--для twenty-twenty-->
-    <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>twentytwenty</title>
+
   <link href="{{ url_for('static', filename='css/foundation.css')}}" rel="stylesheet" type="text/css">
   <link href="{{ url_for('static', filename='css/twentytwenty.css')}}" rel="stylesheet" type="text/css">
 <!--локальные файлы-->
@@ -32,7 +29,7 @@
                         <strong>Акция!</strong> Первое посещение бесплатно!
                     </div>
             <div id="twentytwenty_buttons">
-                <a href="#" class="twentytwenty-button">Бронирование</a>
+                <a href="#Sixth_Block" class="twentytwenty-button">Бронирование</a>
                 <a href="#Fourth_Block" class="twentytwenty-button"> Игры</a>
             </div>
         </div> 
@@ -52,7 +49,7 @@
                             Подарите себе и своим близким незабываемые впечатления
                         </div>
                         <div id="client_Form">
-                            <a href="javascript:PopUpShow()" class="button">Хочу попробовать!</a>
+                            <a href="#Sixth_Block" class="button">Хочу попробовать!</a>
                             
                         </div>
                     </div>
@@ -96,7 +93,7 @@
                 	</div>
                 </div>
                 <div id="Fourth_Block_button">
-                    <a href="#" class="button" ">Запросить каталог игр</a>
+                    <a href="#" class="button">Запросить каталог игр</a>
                 </div>        
             </div>
 <!--пятый блок, отзывы+галерея-->     
@@ -173,21 +170,24 @@
             </div>
         </div>      
 <!--шестой блок, Бонирование-->
-           <div id="Sixth_Block" class="container">
-                <div id="Sixth_Block_header">забронировать сеанс</div>        
-                    <form action="#" id="Sixth_Block_form">
-                        <div>
-                            <input type="text" name="name" class=" input_Sixth_Block"id="Sixth_Block_name" placeholder="Имя">
-                            <input type="text" name="phone" class=" input_Sixth_Block" id="Sixth_Block_phone" placeholder="Телефон">
-                        </div>
-                        <div>
-                            <input type="text" name="email" class=" input_Sixth_Block" id="Sixth_Block_email" placeholder="email">
-                            <input type="text" name="name" class=" input_Sixth_Block" id="Sixth_Block_time" placeholder="Дата,время, количество установок">
-                        </div>
-                        <button type="button" id="Sixth_Block_button"> Отправить</button>
-                    </form>    
+           <div id="Sixth_Block" class="modalDialog">
+                <div id="Sixth_Block_main">
+                    <a href="#close" title="Закрыть" class="close">X</a>
+                        <div id="Sixth_Block_header">забронировать сеанс</div>        
+                            <form action="#" id="Sixth_Block_form">
+                                <div>
+                                    <input type="text" name="name" class=" input_Sixth_Block"id="Sixth_Block_name" placeholder="Имя">
+                                    <input type="text" name="phone" class=" input_Sixth_Block" id="Sixth_Block_phone" placeholder="Телефон">
+                                </div>
+                                <div>
+                                    <input type="text" name="email" class=" input_Sixth_Block" id="Sixth_Block_email" placeholder="email">
+                                    <input type="text" name="name" class=" input_Sixth_Block" id="Sixth_Block_time" placeholder="Дата,время, количество установок">
+                                </div>
+                                <button type="button" id="Sixth_Block_button"> Отправить</button>
+                            </form>    
+                </div>
             </div>
-            <div id="bg_Sixth_Block"></div>
+            
 <!--седьмой блок, Карта-->
     <div id="Seventh_Block" class="container">
         <div id="Seventh_Block_Info">
@@ -229,11 +229,12 @@
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25f14a521d194e74dfd45cbee91b786f28afe3c5412c0794667425adeb91a206&amp;source=constructor" width="643" height="476" frameborder="0" id="map"></iframe>
             </div>
         </div>        
-    </div>                       
+    </div>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>                     
     <script src="{{ url_for('static', filename='js/jquery-3.2.1.js')}}"></script>
     <script src="{{ url_for('static', filename='js/jquery.event.move.js')}}"></script>
     <script src="{{ url_for('static', filename='js/jquery.twentytwenty.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/Site.js')}}"></script>
     <script>
         $(function(){
         $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
