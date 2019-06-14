@@ -271,7 +271,7 @@ font-size: 0.7rem;}
     pointer-events: auto;
 }
 #Sixth_Block > div {
-    width: 50vw;
+    width: 70vw;
     height: 30vh;
     position: relative;
     margin: 20% auto;
@@ -279,6 +279,16 @@ font-size: 0.7rem;}
     border-radius: 10px;
         
 }
+@media screen and (max-height: 950px){
+#Sixth_Block > div {
+       height: 50vh;}
+}
+@media screen and (max-height: 550px){
+#Sixth_Block > div {
+       height: 60vh;
+       margin: 15% auto;}
+}
+
 #Sixth_Block_main{
         background-image: url(Review_background.jpg) /* переделать перенос картинки  и сменить название в папку img*/;
     background-size: 100% 100%;
@@ -328,6 +338,19 @@ font-size: 0.7rem;}
     margin-top: 10px;
     background-color: rgba(0,0,0,0.6)
 }
+@media screen and (max-width: 600px){
+ .input_Sixth_Block{
+    min-width: 150px;
+    min-height: 15px;
+    margin-left: 30px;
+    font-size: 10px;
+       }
+}
+@media screen and (max-width: 500px){
+#Sixth_Block_header{
+    margin-top: 10px;
+    font-size: 20px;}
+    }
 #Sixth_Block_button{
     margin-top: 10px;
 }
