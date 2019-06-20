@@ -187,7 +187,7 @@ font-size: 0.7rem;}
 #Third_Block{
    background-color: rgba(255,0,0,0.3);
         border-top: 4px solid #000000;
-        background-image: url(third block.jpg);   /* переделать перенос картинки в папку img*/
+        background-image: url(../img/third block.jpg);   /* переделать перенос картинки в папку img*/
         background-size: 100% 100%;
         }   
 
@@ -290,7 +290,7 @@ font-size: 0.7rem;}
 }
 
 #Sixth_Block_main{
-        background-image: url(Review_background.jpg) /* переделать перенос картинки  и сменить название в папку img*/;
+        background-image: url(../img/form_background.jpg);
     background-size: 100% 100%;
 }
 .close {
@@ -457,7 +457,18 @@ iframe{
 a:hover{
     color: black;
 }
-
+#VK_button{
+    display: block;
+    position: fixed;
+    float: right; 
+    right: 30px;
+    bottom: 30px;
+    background-image: url(../img/VK.png);
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+      z-index: 100;
+}
 
 
 
