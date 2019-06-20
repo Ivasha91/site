@@ -467,8 +467,19 @@ a:hover{
     background-size: 100% 100%;
     width: 50px;
     height: 50px;
-      z-index: 100;
+    z-index: 100;
 }
-
+#Inst_button{
+    display: block;
+    position: fixed;
+    float: right; 
+    right: 100px;
+    bottom: 30px;
+    background-image: url(../img/Inst.png);
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}
 
 
