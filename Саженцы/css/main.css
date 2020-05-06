@@ -14,6 +14,9 @@ body, html {
 .bg-dark {
     background-color: #292929!important;
 }
+.display-4{
+  font-family: 'Lobster', cursive;
+}
 
 .partGreen{
   border-top: 5px solid black;
@@ -31,7 +34,8 @@ body, html {
   left: 21vw;
   background: #7dc01c;
   transform: skew(-60deg);
-  padding: 5px 20px 5px 20px;
+  padding: 26px 30px 26px 30px;
+  /* 5px 20px 5px 20px; */
 }
 .navbar-nav li{
   margin-right: 20px;
@@ -40,6 +44,7 @@ body, html {
 .nav-link {
   font-size: 1.6em !important;
   color: rgba(255,255,255, 0.9) !important;
+  font-family: 'Lobster', cursive;
 }
 
 .carousel-inner {
@@ -61,14 +66,17 @@ body, html {
 
 .display-2{
   text-shadow: 3px 0px 2px #222;
+  font-family: 'Lobster', cursive;
 }
 #underTopic {
   transform: translateY(-70%);
   text-shadow: 3px 0px 2px #222;
+  font-family: 'Lobster', cursive;
 }
 .underTopicBtn {
   transform: translateY(100%);
   margin: 0 5% 0 5%;
+  font-family: 'Lobster', cursive;
 }
 
 .underTopicBtn, .introBtn, .cardsBtn {
@@ -78,6 +86,7 @@ body, html {
   font-size: 1.8rem;
   line-height: 1.5;
   border-radius: .3rem;
+  font-family: 'Lobster', cursive;
 }
 .btn-success{
   background-color: #7dc01c !important;
@@ -191,8 +200,11 @@ footer {
   color: white;
   padding-bottom: 0.5em !important;
 }
+#topicFooter{
+  font-family: 'Lobster', cursive;
+}
 #phoneFooter{
-  background: #7dc01c;
+  /* background: #7dc01c; */
   transform: skew(-60deg);
   padding: 5px 20px 5px 20px;
 }
